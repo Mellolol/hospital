@@ -1,0 +1,338 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+body {
+	margin: 0;
+	/*font-family: Arial, sans-serif; /* Kene valami jo betutipus... */
+	/*font-family: "Tenor Sans", sans-serif;*/
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-weight: 400;
+	font-style: normal;
+	/*background-color: #777777;*/
+	/*background-color: #CCCCCC;*/
+	background-color: #2E94B975;
+}
+header {
+	/*background-color: #555;*/
+	/*background-color: #EEE;*/
+	background-color: #FFFFFF;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*border-bottom: solid;*/
+	font-size: 28px; /* BASIC: 24px */
+	/*border-left: solid;*/
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	/*border-right: solid;
+	border-bottom: solid;*/
+	box-shadow: 10px 10px 25px #888;
+	text-align: justify;
+}
+header img {
+	height: 75px;
+	/*background-color: #777;*/
+	/*border-radius: 100px;*/
+	margin-left: 350px; /* BASIC: 25px; */
+	/*border: solid;*/
+	border-radius: 100px;
+	border-color: #555;
+}
+header img:hover {
+	/*background-color: #ddd;*/
+	/*background-color: #2E94B925;*/
+	background-color: #eee;
+	/*box-shadow: 2px -5px 5px #BBB;*/
+}
+header div {
+	margin-right: 200px; /* BASIC: 30px; */
+	/*border: solid;
+	border-radius: 75px;
+	border-color: #555;*/
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	display: inline;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+nav ul li a.active {
+	font-weight: bold;
+}
+/* Class hivatkozasok: */
+.nav {
+	display: flex;
+	/*background-color: #EEE;*/
+	background-color: #FFF;
+}
+.nav a {
+	padding: 14px 20px;
+	display: block;
+	color: #555;
+	text-align: center;
+	text-decoration: none;
+}
+.nav a:hover {
+	/*background-color: #ddd;*/
+	/*background-color: #2E94B925;*/
+	background-color: #eee;
+	color: black;
+	/*font-weight: bold;*/
+	border-radius: 75px;
+	/*box-shadow: 2px -5px 5px #BBB;*/
+}
+.content {
+	display: none;
+	padding: 20px;
+	text-align: center;
+}
+.content.active {
+	display: block;
+}
+.image-container {
+	text-align: center;
+}
+.centered-image {
+	max-width: 100%;
+	height: auto;
+	width: 1500px;
+}
+.csapat {
+	text-align: center;
+}
+.csapat img {
+	height:655px;
+}
+/* Id hivatkozasok: */
+#home {
+	text-align: center;
+	margin: 50px;
+}
+#impressum {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* LOGIN PANEL */
+.container {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #00509b;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input {
+    background: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6 ease-in-out;
+}
+
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s ease-in-out;
+}
+
+@keyframes move {
+
+    0%, 
+    49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%, 
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    border: 1px solid #ccc;
+    border: 20%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;   
+    transition: all 0.6s ease-in-out;
+    border-radius: 0 0 0 150px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 0 0;
+}
+
+.toggle {
+    background: #512da8;
+    height: 100%;
+    background: linear-gradient(to top right, #001dc2, #03cdff);
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle {
+    transform: translateX(50%);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
